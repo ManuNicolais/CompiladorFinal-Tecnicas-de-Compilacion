@@ -1,0 +1,49 @@
+int variableGlobal;
+int variableGlobal;
+double valorGlobal;
+char caracterGlobal;
+
+int miFuncion(int parametro1, double parametro2) {
+    int variableLocal;
+    int variableLocal;
+
+    int variableNoUsada1;
+    string variableNoUsada2;
+    double variableNoUsada3;
+
+    parametro1 = 100;
+    variableLocal = parametro1 + 5;
+
+    variableFantasma = 42;
+
+    miFuncion = 10;
+
+    valorGlobal = 3.14;
+
+    return variableLocal;
+}
+
+void funcionVoid() {
+    int x;
+    int y;
+    int z;
+
+    x = 10;
+    y = x + 5;
+
+    w = x + y;
+}
+
+int main() {
+    int resultado;
+    int valor;
+
+    resultado = miFuncion(5, 3.14);
+    valor = resultado + 10;
+
+    variableFinal = valor;
+
+    variableGlobal = valor;
+
+    return resultado;
+}

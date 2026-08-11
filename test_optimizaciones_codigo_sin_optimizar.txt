@@ -1,0 +1,96 @@
+  0: // Código de tres direcciones generado
+  1: PROGRAMA_INICIO:
+  2: // Declaración de variables globales
+  3: func_testSimplificacion:
+  4: PARAM x int
+  5: DECLARE a int
+  6: DECLARE b int
+  7: DECLARE c int
+  8: DECLARE d int
+  9: t0 = 5 + 3
+ 10: a = t0
+ 11: t1 = a + 0
+ 12: b = t1
+ 13: t2 = b * 1
+ 14: c = t2
+ 15: t3 = c * 0
+ 16: d = t3
+ 17: t4 = a + b
+ 18: t5 = t4 + c
+ 19: t6 = t5 + d
+ 20: return t6
+ 21: func_testPropagacion:
+ 22: PARAM x int
+ 23: DECLARE a int
+ 24: DECLARE b int
+ 25: DECLARE c int
+ 26: a = 10
+ 27: t7 = a + 5
+ 28: b = t7
+ 29: c = b
+ 30: return c
+ 31: func_testSubexpresiones:
+ 32: PARAM a int
+ 33: PARAM b int
+ 34: DECLARE x int
+ 35: DECLARE y int
+ 36: DECLARE z int
+ 37: t8 = a + b
+ 38: x = t8
+ 39: t9 = a + b
+ 40: y = t9
+ 41: t10 = x + y
+ 42: z = t10
+ 43: return z
+ 44: func_testCodigoMuerto:
+ 45: PARAM x int
+ 46: DECLARE a int
+ 47: DECLARE b int
+ 48: DECLARE c int
+ 49: DECLARE resultado int
+ 50: t11 = x + 10
+ 51: resultado = t11
+ 52: return resultado
+ 53: a = 20
+ 54: b = 30
+ 55: t12 = a + b
+ 56: c = t12
+ 57: resultado = c
+ 58: func_testBucles:
+ 59: PARAM n int
+ 60: DECLARE i int
+ 61: DECLARE resultado int
+ 62: DECLARE limite int
+ 63: DECLARE factor int
+ 64: factor = 3
+ 65: t13 = n * 2
+ 66: limite = t13
+ 67: i = 0
+ 68: WHILE_INICIO_0:
+ 69: t14 = i < limite
+ 70: if t14 goto WHILE_CUERPO_1
+ 71: goto WHILE_FIN_2
+ 72: WHILE_CUERPO_1:
+ 73: t15 = resultado + factor
+ 74: resultado = t15
+ 75: t16 = i + 1
+ 76: i = t16
+ 77: goto WHILE_INICIO_0
+ 78: WHILE_FIN_2:
+ 79: return resultado
+ 80: func_main:
+ 81: DECLARE resultado int
+ 82: DECLARE tempNoUsado int
+ 83: t17 = CALL func_testSimplificacion, 1
+ 84: resultado = t17
+ 85: t18 = CALL func_testPropagacion, resultado
+ 86: resultado = t18
+ 87: t19 = CALL func_testSubexpresiones, resultado, 5
+ 88: resultado = t19
+ 89: t20 = CALL func_testCodigoMuerto, resultado
+ 90: resultado = t20
+ 91: t21 = CALL func_testBucles, resultado
+ 92: resultado = t21
+ 93: tempNoUsado = 999
+ 94: return resultado
+ 95: PROGRAMA_FIN:

@@ -1,0 +1,105 @@
+  0: // Código de tres direcciones generado
+  1: PROGRAMA_INICIO:
+  2: // Declaración de variables globales
+  3: DECLARE contadorGlobal int
+  4: DECLARE valorPi double
+  5: DECLARE inicial char
+  6: DECLARE activo bool
+  7: func_calcular:
+  8: PARAM x int
+  9: DECLARE res int
+ 10: t0 = x + 10
+ 11: res = t0
+ 12: return res
+ 13: t1 = res * 2
+ 14: res = t1
+ 15: t2 = res / 3
+ 16: res = t2
+ 17: func_main:
+ 18: DECLARE a int
+ 19: DECLARE b int
+ 20: DECLARE c int
+ 21: DECLARE d int
+ 22: DECLARE i int
+ 23: DECLARE resultado int
+ 24: DECLARE numeros[3] int
+ 25: contadorGlobal = 0
+ 26: valorPi = 3.14
+ 27: inicial = 'M'
+ 28: activo = true
+ 29: t3 = 8
+ 30: a = 8
+ 31: t4 = 8
+ 32: b = 8
+ 33: t5 = 8
+ 34: c = 8
+ 35: t6 = 0
+ 36: d = 0
+ 37: t7 = 16
+ 38: t8 = 24
+ 39: t9 = 24
+ 40: resultado = 24
+ 41: a = 10
+ 42: t10 = 15
+ 43: b = 15
+ 44: c = 15
+ 45: t11 = 39
+ 46: resultado = 39
+ 47: t12 = 44
+ 48: a = 44
+ 49: t13 = 44
+ 50: b = 44
+ 51: t14 = 88
+ 52: resultado = 88
+ 53: numeros[0] = 10
+ 54: numeros[1] = 20
+ 55: numeros[2] = 30
+ 56: t15 = numeros[0]
+ 57: t16 = 88 + t15
+ 58: t17 = numeros[1]
+ 59: t18 = t16 + t17
+ 60: resultado = t18
+ 61: i = 0
+ 62: WHILE_INICIO_0:
+ 63: t19 = numeros[0]
+ 64: t20 = 0 < t19
+ 65: if t20 goto WHILE_CUERPO_1
+ 66: goto WHILE_FIN_2
+ 67: WHILE_CUERPO_1:
+ 68: t21 = resultado + 0
+ 69: resultado = t21
+ 70: t22 = 1
+ 71: i = 1
+ 72: goto WHILE_INICIO_0
+ 73: WHILE_FIN_2:
+ 74: FOR_INICIO_3:
+ 75: t23 = numeros[0]
+ 76: t24 = 1 < t23
+ 77: if t24 goto FOR_CUERPO_4
+ 78: goto FOR_FIN_6
+ 79: FOR_CUERPO_4:
+ 80: t25 = t21
+ 81: resultado = t25
+ 82: FOR_ACTUALIZ_5:
+ 83: t26 = 2
+ 84: goto FOR_INICIO_3
+ 85: FOR_FIN_6:
+ 86: t27 = resultado > 0
+ 87: if t27 goto THEN_7
+ 88: goto ELSE_8
+ 89: THEN_7:
+ 90: DECLARE aux int
+ 91: t28 = resultado + 10
+ 92: aux = t28
+ 93: resultado = aux
+ 94: goto END_IF_9
+ 95: ELSE_8:
+ 96: resultado = 0
+ 97: END_IF_9:
+ 98: t29 = CALL func_calcular, 0
+ 99: resultado = t29
+100: contadorGlobal = resultado
+101: valorPi = resultado
+102: inicial = 'X'
+103: return resultado
+104: PROGRAMA_FIN:

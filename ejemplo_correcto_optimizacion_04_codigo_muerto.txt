@@ -1,0 +1,90 @@
+  0: // Código de tres direcciones generado
+  1: PROGRAMA_INICIO:
+  2: // Declaración de variables globales
+  3: DECLARE contadorGlobal int
+  4: DECLARE valorPi double
+  5: DECLARE inicial char
+  6: DECLARE activo bool
+  7: func_calcular:
+  8: PARAM x int
+  9: DECLARE res int
+ 10: t0 = x + 10
+ 11: res = t0
+ 12: return res
+ 13: res = t1
+ 14: t2 = res / 3
+ 15: res = t2
+ 16: func_main:
+ 17: DECLARE a int
+ 18: DECLARE b int
+ 19: DECLARE c int
+ 20: DECLARE d int
+ 21: DECLARE i int
+ 22: DECLARE resultado int
+ 23: DECLARE numeros[3] int
+ 24: contadorGlobal = 0
+ 25: valorPi = 3.14
+ 26: inicial = 'M'
+ 27: activo = true
+ 28: a = 8
+ 29: b = 8
+ 30: c = 8
+ 31: d = 0
+ 32: resultado = 24
+ 33: a = 10
+ 34: b = 15
+ 35: c = 15
+ 36: resultado = 39
+ 37: a = 44
+ 38: b = 44
+ 39: resultado = 88
+ 40: numeros[0] = 10
+ 41: numeros[1] = 20
+ 42: numeros[2] = 30
+ 43: t15 = numeros[0]
+ 44: t16 = 88 + t15
+ 45: t17 = numeros[1]
+ 46: t18 = t16 + t17
+ 47: resultado = t18
+ 48: i = 0
+ 49: WHILE_INICIO_0:
+ 50: t19 = numeros[0]
+ 51: t20 = 0 < t19
+ 52: if t20 goto WHILE_CUERPO_1
+ 53: goto WHILE_FIN_2
+ 54: WHILE_CUERPO_1:
+ 55: t21 = resultado + 0
+ 56: resultado = t21
+ 57: i = 1
+ 58: goto WHILE_INICIO_0
+ 59: WHILE_FIN_2:
+ 60: FOR_INICIO_3:
+ 61: t23 = numeros[0]
+ 62: t24 = 1 < t23
+ 63: if t24 goto FOR_CUERPO_4
+ 64: goto FOR_FIN_6
+ 65: FOR_CUERPO_4:
+ 66: t25 = t21
+ 67: resultado = t25
+ 68: FOR_ACTUALIZ_5:
+ 69: goto FOR_INICIO_3
+ 70: FOR_FIN_6:
+ 71: t27 = resultado > 0
+ 72: if t27 goto THEN_7
+ 73: goto ELSE_8
+ 74: THEN_7:
+ 75: DECLARE aux int
+ 76: t28 = resultado + 10
+ 77: aux = t28
+ 78: resultado = aux
+ 79: goto END_IF_9
+ 80: ELSE_8:
+ 81: resultado = 0
+ 82: END_IF_9:
+ 83: t29 = CALL func_calcular, 0
+ 84: resultado = t29
+ 85: contadorGlobal = resultado
+ 86: valorPi = resultado
+ 87: inicial = 'X'
+ 88: return resultado
+ 89: PROGRAMA_FIN:
