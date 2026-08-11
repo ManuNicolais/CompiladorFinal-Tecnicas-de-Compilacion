@@ -1,0 +1,81 @@
+  0: // Código de tres direcciones generado
+  1: PROGRAMA_INICIO:
+  2: // Declaración de variables globales
+  3: func_testSimplificacion:
+  4: PARAM x int
+  5: DECLARE a int
+  6: DECLARE b int
+  7: DECLARE c int
+  8: DECLARE d int
+  9: a = 8
+ 10: b = 8
+ 11: c = 8
+ 12: d = 0
+ 13: return 24
+ 14: func_testPropagacion:
+ 15: PARAM x int
+ 16: DECLARE a int
+ 17: DECLARE b int
+ 18: DECLARE c int
+ 19: a = 10
+ 20: b = 15
+ 21: c = 15
+ 22: return 15
+ 23: func_testSubexpresiones:
+ 24: PARAM a int
+ 25: PARAM b int
+ 26: DECLARE x int
+ 27: DECLARE y int
+ 28: DECLARE z int
+ 29: t8 = a + b
+ 30: x = t8
+ 31: t9 = t8
+ 32: y = t9
+ 33: t10 = x + y
+ 34: z = t10
+ 35: return z
+ 36: func_testCodigoMuerto:
+ 37: PARAM x int
+ 38: DECLARE a int
+ 39: DECLARE b int
+ 40: DECLARE c int
+ 41: DECLARE resultado int
+ 42: t11 = x + 10
+ 43: resultado = t11
+ 44: return resultado
+ 45: func_testBucles:
+ 46: PARAM n int
+ 47: DECLARE i int
+ 48: DECLARE resultado int
+ 49: DECLARE limite int
+ 50: DECLARE factor int
+ 51: factor = 3
+ 52: t13 = n * 2
+ 53: limite = t13
+ 54: i = 0
+ 55: WHILE_INICIO_0:
+ 56: t14 = 0 < limite
+ 57: if t14 goto WHILE_CUERPO_1
+ 58: goto WHILE_FIN_2
+ 59: WHILE_CUERPO_1:
+ 60: t15 = resultado + 3
+ 61: resultado = t15
+ 62: i = 1
+ 63: goto WHILE_INICIO_0
+ 64: WHILE_FIN_2:
+ 65: return resultado
+ 66: func_main:
+ 67: DECLARE resultado int
+ 68: DECLARE tempNoUsado int
+ 69: t17 = CALL func_testSimplificacion, 1
+ 70: resultado = t17
+ 71: t18 = CALL func_testPropagacion, resultado
+ 72: resultado = t18
+ 73: t19 = CALL func_testSubexpresiones, resultado, 5
+ 74: resultado = t19
+ 75: t20 = CALL func_testCodigoMuerto, resultado
+ 76: resultado = t20
+ 77: t21 = CALL func_testBucles, resultado
+ 78: resultado = t21
+ 79: return resultado
+ 80: PROGRAMA_FIN:

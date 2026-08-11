@@ -1,0 +1,76 @@
+  0: // Código de tres direcciones generado
+  1: PROGRAMA_INICIO:
+  2: // Declaración de variables globales
+  3: func_buscarNumero:
+  4: PARAM arreglo int
+  5: PARAM objetivo int
+  6: DECLARE i int
+  7: DECLARE encontrado int
+  8: encontrado = 0
+  9: FOR_INICIO_0:
+ 10: t0 = i < 10
+ 11: if t0 goto FOR_CUERPO_1
+ 12: goto FOR_FIN_3
+ 13: FOR_CUERPO_1:
+ 14: t1 = arreglo[i]
+ 15: t2 = t1 == objetivo
+ 16: if t2 goto THEN_4
+ 17: goto ELSE_5
+ 18: THEN_4:
+ 19: encontrado = 1
+ 20: break
+ 21: goto END_IF_6
+ 22: ELSE_5:
+ 23: END_IF_6:
+ 24: FOR_ACTUALIZ_2:
+ 25: goto FOR_INICIO_0
+ 26: FOR_FIN_3:
+ 27: return 1
+ 28: func_sumarPares:
+ 29: PARAM valores int
+ 30: DECLARE suma int
+ 31: DECLARE i int
+ 32: suma = 0
+ 33: FOR_INICIO_7:
+ 34: t4 = i < 5
+ 35: if t4 goto FOR_CUERPO_8
+ 36: goto FOR_FIN_10
+ 37: FOR_CUERPO_8:
+ 38: t5 = valores[i]
+ 39: t6 = true
+ 40: t7 = t5 % t6
+ 41: if t7 goto THEN_11
+ 42: goto ELSE_12
+ 43: THEN_11:
+ 44: continue
+ 45: goto END_IF_13
+ 46: ELSE_12:
+ 47: END_IF_13:
+ 48: t8 = valores[i]
+ 49: t9 = t8
+ 50: suma = t9
+ 51: FOR_ACTUALIZ_9:
+ 52: goto FOR_INICIO_7
+ 53: FOR_FIN_10:
+ 54: return suma
+ 55: func_main:
+ 56: DECLARE numeros[5] int
+ 57: DECLARE contador int
+ 58: DECLARE resultado int
+ 59: numeros[0] = 2
+ 60: numeros[1] = 4
+ 61: numeros[2] = 6
+ 62: numeros[3] = 8
+ 63: numeros[4] = 10
+ 64: contador = 0
+ 65: FOR_INICIO_14:
+ 66: if true goto FOR_CUERPO_15
+ 67: goto FOR_FIN_17
+ 68: FOR_CUERPO_15:
+ 69: t12 = numeros[contador]
+ 70: resultado = t12
+ 71: FOR_ACTUALIZ_16:
+ 72: goto FOR_INICIO_14
+ 73: FOR_FIN_17:
+ 74: return 0
+ 75: PROGRAMA_FIN:
